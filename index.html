@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title> Shop page</title>
-  <link rel="stylesheet" href="./source/css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body class="page__body theme">
-  <header class="main__header">
+<body class="page-body theme">
+  <header class="main-header">
     <nav class="main-nav">
-      <div class="main-nav__info ">
+      <div class="main-nav__info">
         <a class="main-nav__link" href="#" aria-label="#">
           <p class="main-nav__data main-nav__data--shop">Shop</p>
         </a>
@@ -107,14 +107,12 @@
       <h1 class="visually-hidden"> General information</h1>
       <div class="data__pictures">
         <div class="data__pictures-design">
-          <img src="source/img/picture1.jpg" width="111" height="139" alt="example picture">
-          <img src="source/img/picture2.jpg" width="111" height="139" alt="example picture">
+          <img class="data__photo" src="src/img/picture1.jpg" width="111" height="139" alt="example picture">
+          <img class="data__photo" src="src/img/picture2.jpg" width="111" height="139" alt="example picture">
           <p class="data__pictures-view">View</p>
         </div>
-        <img class="data__pictures-foto icon--light" src="source/img/picture3.jpg" width="475" height="591"
-          alt="chosen picture">
-        <img class="data__pictures-foto icon--dark" src="source/img/picture4.jpg" width="475" height="591"
-          alt="chosen picture">
+        <img class="icon--light" src="src/img/picture3.jpg" width="475" height="591" alt="chosen picture">
+        <img class="icon--dark" src="src/img/picture4.jpg" width="475" height="591" alt="chosen picture">
       </div>
       <div class="info-details">
         <p class="info-details__name">ITEM NAME</p>
@@ -149,13 +147,13 @@
         </button>
         <button class="info-details__button" type="button">
           Dimensions
-          <svg class="info-details__line icon--light" width="22" height="22" fill="none"
+          <svg class="info-details__arrow icon--light" width="22" height="22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="m19.9 9.3 1.08 1.09c.46.45.46 1.2 0 1.65l-9.49 9.5c-.46.45-1.2.45-1.65 0l-9.5-9.5a1.17 1.17 0 0 1 0-1.65L1.43 9.3a1.17 1.17 0 0 1 1.67.02l5.6 5.89V1.17C8.7.52 9.24 0 9.89 0h1.56c.65 0 1.17.52 1.17 1.17v14.04l5.61-5.89a1.16 1.16 0 0 1 1.68-.02Z"
               fill="#000" />
           </svg>
-          <svg class="info-details__line icon--dark" width="22" height="22" fill="none"
+          <svg class="info-details__arrow icon--dark" width="22" height="22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="m19.9 9.3 1.08 1.09c.46.45.46 1.2 0 1.65l-9.49 9.5c-.46.45-1.2.45-1.65 0l-9.5-9.5a1.17 1.17 0 0 1 0-1.65L1.43 9.3a1.17 1.17 0 0 1 1.67.02l5.6 5.89V1.17C8.7.52 9.24 0 9.89 0h1.56c.65 0 1.17.52 1.17 1.17v14.04l5.61-5.89a1.16 1.16 0 0 1 1.68-.02Z"
@@ -166,40 +164,40 @@
     </section>
   </main>
   <footer class="main-footer">
-    <ul class="footer__list">
-      <li class="footer__item footer__item--active">
-        <a class="footer__link" href="#" aria-label="#">
-          <p class="footer__info">Cart</p>
+    <ul class="main-footer__list">
+      <li class="main-footer__item main-footer__item--active">
+        <a class="main-footer__link" href="#" aria-label="#">
+          <p class="main-footer__info">Cart</p>
         </a>
       </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#" aria-label="#">
-          <p class="footer__info">Overview</p>
+      <li class="main-footer__item">
+        <a class="main-footer__link" href="#" aria-label="#">
+          <p class="main-footer__info">Overview</p>
         </a>
       </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#" aria-label="#">
-          <p class="footer__info">Boutique</p>
+      <li class="main-footer__item">
+        <a class="main-footer__link" href="#" aria-label="#">
+          <p class="main-footer__info">Boutique</p>
         </a>
       </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#" aria-label="#">
-          <p class="footer__info">About Us</p>
+      <li class="main-footer__item">
+        <a class="main-footer__link" href="#" aria-label="#">
+          <p class="main-footer__info">About Us</p>
         </a>
       </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#" aria-label="#">
-          <p class="footer__info">FAQ</p>
+      <li class="main-footer__item">
+        <a class="main-footer__link" href="#" aria-label="#">
+          <p class="main-footer__info">FAQ</p>
         </a>
       </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#" aria-label="#">
-          <p class="footer__info">ITEM SECTION NAME</p>
+      <li class="main-footer__item">
+        <a class="main-footer__link" href="#" aria-label="#">
+          <p class="main-footer__info">ITEM SECTION NAME</p>
         </a>
       </li>
     </ul>
   </footer>
-  <script src="./source/js/script.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>

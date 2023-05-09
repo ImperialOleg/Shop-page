@@ -16,7 +16,21 @@ html {
   box-sizing: border-box;
 }
 
-.page__body {
+.theme {
+  --main-bg: var(--primary);
+  --button-bg: var(--primary);
+  --button-color: var(--secondary);
+  --primary-btn-bg: var(--primary);
+  --secondary-btn-bg: var(--secondary);
+  --main-nav-color: var(--secondary);
+  --footer-bg: var(--primary);
+  --footer-item-color: var(--secondary);
+  --footer-divider-color: var(--secondary);
+  --footer-active-item-bg: var(--secondary);
+  --footer-active-item-color: var(--primary);
+}
+
+.page-body {
   min-height: 100%;
   font-family: 'Jost', sans-serif;
   background-color: var(--main-bg);
@@ -32,20 +46,6 @@ html {
   --secondary: #000000;
 }
 
-.theme {
-  --main-bg: var(--primary);
-  --button-bg: var(--primary);
-  --button-color: var(--secondary);
-  --primary-btn-bg: var(--primary);
-  --secondary-btn-bg: var(--secondary);
-  --main-nav-color: var(--secondary);
-  --footer-bg: var(--primary);
-  --footer-item-color: var(--secondary);
-  --footer-divider-color: var(--secondary);
-  --footer-active-item-bg: var(--secondary);
-  --footer-active-item-color: var(--primary);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,7 +57,7 @@ html {
   overflow: hidden;
 }
 
-.main__header {
+.main-header {
   max-width: 1440px;
   min-height: 50px;
 }
@@ -88,10 +88,10 @@ html {
 }
 
 .main-nav__info {
-  min-width: 163px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 163px;
 }
 
 .main-nav__data {
@@ -101,10 +101,10 @@ html {
 }
 
 .main-nav__data--shop {
-  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 50px;
 }
 
 .main-nav__info--border {
@@ -113,11 +113,11 @@ html {
 }
 
 .info {
-  min-width: 394px;
-  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 394px;
+  min-height: 50px;
 }
 
 .main-nav__slogan {
@@ -128,11 +128,11 @@ html {
 }
 
 .search {
-  min-width: 340px;
-  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 340px;
+  min-height: 50px;
   font-size: 22px;
   border-right: 1px solid var(--main-nav-color);
   border-left: 1px solid var(--main-nav-color);
@@ -141,10 +141,10 @@ html {
 .search__info {
   position: relative;
   min-width: 333px;
+  min-height: 29px;
   background: #E7E7E7;
   border: 1px solid var(--main-nav-color);
   border-radius: 48px;
-  min-height: 29px;
   text-align: center;
   cursor: pointer;
 }
@@ -165,11 +165,11 @@ html {
 }
 
 .main-nav__item {
-  min-width: 50px;
-  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 50px;
+  min-height: 50px;
   border-right: 1px solid var(--main-nav-color);
 }
 
@@ -199,6 +199,10 @@ html {
   display: flex;
   flex-direction: column;
   gap: 52px;
+}
+
+.data__photo {
+  cursor: pointer;
 }
 
 .data__pictures-view {
@@ -243,7 +247,6 @@ html {
   background: var(--button-bg);
 }
 
-
 .info-details__button--dark {
   position: relative;
   width: 443px;
@@ -256,6 +259,9 @@ html {
 }
 
 .info-details__addition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: -1%;
   right: 0;
@@ -265,9 +271,6 @@ html {
   border-width: 1px 1px 1px 0px;
   border-style: solid;
   border-color: var(--button-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 
 }
@@ -292,22 +295,16 @@ html {
   top: 35%;
 }
 
-.info-details__line {
-  position: absolute;
-  right: 5%;
-  top: 35%;
-}
-
-.footer__list {
-  margin: 0;
-  padding: 0;
+.main-footer__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.footer__item {
+.main-footer__item {
   min-width: 163px;
   min-height: 50px;
   text-align: center;
@@ -316,23 +313,23 @@ html {
   color: var(--footer-item-color);
 }
 
-.footer__item--active {
+.main-footer__item--active {
   background-color: var(--footer-active-item-bg);
   color: var(--footer-active-item-color);
 }
 
-.footer__item:last-child {
+.main-footer__item:last-child {
   min-width: 609px;
   min-height: 50px;
   border-right: none;
 }
 
-.footer__link {
+.main-footer__link {
   text-decoration: none;
   color: inherit;
 }
 
-.footer__info {
+.main-footer__info {
   font-size: 22px;
   line-height: 32px;
 }
